@@ -59,7 +59,7 @@ const processSearch= (dataLimit)=>{
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value ;
     loadPhones(searchText, dataLimit);
-    searchField.value= '';
+    // searchField.value= '';
 }
 
 // handle search button click 
@@ -88,7 +88,7 @@ const toggleSpinner = isLoading=>{
 
 // not the best way to lead show All 
 document.getElementById('btn-show-all').addEventListener('click', function(){
-    processSearch()
+    processSearch();
 })
 
 const loadPhoneDetails = id=>{
